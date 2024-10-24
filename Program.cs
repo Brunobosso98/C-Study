@@ -6,7 +6,29 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-         Multiplicacao();
+         Menu();
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
+            Console.WriteLine("Qual seu movimento?");
+            Console.WriteLine("1 - Soma");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Multiplicação");
+
+            Console.WriteLine("---------");
+            Console.WriteLine("Selecione uma opção: ");
+            short res = short.Parse(Console.ReadLine());
+
+            switch(res) {
+                case 1: Soma(); break;
+                case 2: Subtracao(); break;
+                case 3: Divisao(); break;
+                case 4: Multiplicacao(); break;
+                default: Menu(); break;
+            }
         }
         static void Soma()
         {
@@ -22,6 +44,7 @@ namespace Calculator
             float resultado = v1 + v2;
             Console.WriteLine($"O resultado da: {resultado}"); 
             Console.ReadKey();
+            Menu();
 
         }
         static void Subtracao() 
@@ -40,6 +63,8 @@ namespace Calculator
             float resultado = v1 - v2;
             Console.WriteLine($"O resultado da subtração é {resultado}");
             Console.ReadKey();
+            Menu();
+
         }
         static void Divisao() 
         {
@@ -56,6 +81,8 @@ namespace Calculator
             float resultado = v1 / v2;
             Console.WriteLine($"O resultado da divisão é {resultado}");
             Console.ReadKey();
+            Menu();
+
         }
         static void Multiplicacao()
         {
@@ -68,6 +95,8 @@ namespace Calculator
             float resultado = v1 * v2;
             Console.WriteLine($"O resultado da multiplicação é: {resultado}");
             Console.ReadKey();
+            Menu();
+
         }
     }
 }
