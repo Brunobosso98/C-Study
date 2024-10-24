@@ -12,3 +12,4 @@ c:\Users\bruno\OneDrive\Área de Trabalho\C#\Calculadora\obj\Debug\net8.0\refint
 c:\Users\bruno\OneDrive\Área de Trabalho\C#\Calculadora\obj\Debug\net8.0\Calculadora.pdb
 c:\Users\bruno\OneDrive\Área de Trabalho\C#\Calculadora\obj\Debug\net8.0\Calculadora.genruntimeconfig.cache
 c:\Users\bruno\OneDrive\Área de Trabalho\C#\Calculadora\obj\Debug\net8.0\ref\Calculadora.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\C#\Calculadora\obj\Debug\net8.0\Calculadora.sourcelink.json
